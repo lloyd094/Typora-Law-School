@@ -1,0 +1,396 @@
+:root {
+    --side-bar-bg-color: white;
+    --window-border: none;
+    --search-select-bg-color: #575c61;
+    --active-file-bg-color: #f1f4f5;
+    --item-hover-bg-color: #f1f4f5;
+    --item-hover-text-color: black;
+    --control-text-color: #555;
+}
+
+@include-when-export url(https://raw.githubusercontent.com/slashfoo/lmweb/master/style/latinmodern-mono-light.css);
+
+html {
+    font-size: 12pt;
+}
+
+@font-face {
+    font-family: 'STIX2Text';
+    font-style: normal;
+    font-weight: normal;
+    src: local('STIX2Text Regular'),
+        url('./academic/STIX2Text-Regular.woff') format('woff'),
+        url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'STIX2Text';
+    font-style: italic;
+    font-weight: normal;
+    src: local('STIX2Text Italic'),
+        url('./academic/STIX2Text-Italic.woff') format('woff'),
+        url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'STIX2Text';
+    font-style: normal;
+    font-weight: bold;
+    src: local('STIX2Text Bold'),
+        url('./academic/STIX2Text-Bold.woff') format('woff'),
+        url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'STIX2Text';
+    font-style: italic;
+    font-weight: bold;
+    src: local('STIX2Text Bold Italic'),
+    url('./academic/STIX2Text-BoldItalic.woff') format('woff'),
+    url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-BoldItalic.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'STIX2Math';
+    font-style: italic;
+    font-weight: bold;
+    src: local('STIX2Math'),url('./academic/STIX2Math.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./law/lato-v14-latin-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./law/lato-v14-latin-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./law/lato-v14-latin-700.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./law/lato-v14-latin-700italic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+#write {
+    font-family: "Lato", "STIX2Text", "Times New Roman", "serif";
+    line-height: 1.5em;
+    padding: 10%;
+    padding-top: 5%;
+}
+
+.file-list-item-summary {
+    height: 36px;
+}
+
+.file-list-item {
+    padding-top: 18px !important;
+    padding-bottom: 18px;
+}
+
+#sidebar-loading-template.file-list-item {
+    padding-top: 0 !important;
+}
+
+a, a:visited {
+    color: #a00;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    line-height: 1em;
+}
+
+h1  {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+h5  {
+    font-size: 1.1em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+p {
+    margin-top: .5em;
+    margin-bottom: 0;
+    text-align: left;
+    line-height: normal;
+}
+
+pre, code {
+    font-family: 'Latin Modern Mono Light', "Latin Modern Mono", monospace !important;
+}
+
+.footnotes {
+    display: list-item;
+    margin-left: 1em;
+}
+
+.md-fences {
+    border: 1px solid;
+}
+
+.md-fences.md-fences-with-lineno {
+    border: 1px solid #a2a9b1;
+    box-shadow: 1px 1px 1px #ccc;
+    background-color: #f8f7e9;
+}
+
+.CodeMirror-linenumber {
+    color: #333;
+}
+
+*.in-text-selection,
+::selection,
+.CodeMirror-selected {
+    background: var(--search-select-bg-color);
+    color: var(--search-select-text-color) !important;
+    text-shadow: none;
+}
+
+a.md-toc-inner {
+    color: var(--text-color);
+}
+
+.cm-s-typora-default .cm-link {
+    color: #a00;
+    text-decoration: underline;
+}
+
+.cm-s-typora-default .cm-header, .cm-s-typora-default .cm-property {
+    color: black;
+}
+
+#typora-source .CodeMirror-lines {
+    -webkit-font-smoothing: auto;
+    max-width: 1000px;
+}
+
+.md-def-name:before,
+.md-def-name:after {
+    color: #2d2d2d;
+}
+
+sup.md-footnote {
+    background-color: initial;
+    color: inherit;
+}
+
+mark {
+    background: #fff387;
+}
+
+td, th {
+    border: 1px solid;
+    padding-left: 1ch;
+    padding-right: 1ch;
+}
+
+th {
+    border-bottom: 0;
+    padding-top: 2px;
+    background: #575c61;
+    border-color: #333;
+    color: #f3f3f3;
+}
+
+pre.md-meta-block {
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+    padding: 5px;
+    margin-bottom: 1em;
+}
+
+.task-list-item input:before {
+    content: '\221A';
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.6rem;
+    vertical-align: middle;
+    text-align: center;
+    color: #bbb;
+    background-color: inherit;
+}
+
+.task-list-item input:checked:before,
+.task-list-item input[checked]:before{
+    color: inherit;
+}
+
+.md-task-list-item > input {
+    top: auto;
+    margin-left: -1.1em;
+    font-size: 1.3em;
+    margin-top: 0px;
+    -webkit-appearance: none;
+}
+
+.md-task-list-item input:before {
+    content: '\2610';
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.6rem;
+    vertical-align: middle;
+    text-align: center;
+    color: #bbb;
+    background-color: inherit;
+}
+
+.md-task-list-item input:checked:before,
+.md-task-list-item input[checked]:before{
+    color: inherit;
+    content: '\2611';
+}
+
+.task-list-item {
+    padding-left: 1.2em;
+}
+
+blockquote {
+	border: 1px solid #a2a9b1;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px #ccc;
+    background-color: #f3f3f3;
+    padding: 5px;
+    margin: 0.75em;
+    position: relative;
+    left: 0px;
+}
+
+blockquote li::after {
+    position: initial;
+}
+
+#write > blockquote {
+    padding: 5px 30px 5px 10px;
+	margin-left: -10px;
+    width: calc(100% + 20px);
+}
+
+#write >  .md-fences-with-lineno {
+    margin-left: -33px;
+    color: black;
+}
+
+.CodeMirror-linenumber {
+    min-width: 25px;
+}
+
+.md-header {
+    font-size: inherit !important;
+}
+
+li {
+    margin: 0;
+}
+
+ol, ul {
+    padding-left: 20px;
+}
+
+/* ol li {
+    font-weight: bold;
+} */
+
+ol ol li > * {
+    font-weight: normal;
+    /* text-decoration: underline; */
+}
+
+ol ol ol li > * {
+    font-weight: normal;
+    /* text-decoration: none !important;
+    display: inline-block; */
+}
+
+ol {
+    list-style-type: decimal;
+    /* font-style: normal; */
+}
+
+ol ol {
+    list-style-type: upper-alpha;
+    /* font-weight: normal; */
+}
+
+ol ol ol {
+    list-style-type: lower-roman;
+}
+
+ol ol ol ol {
+    list-style-type: decimal;
+}
+
+ol ol ol ol ol {
+    list-style-type: lower-alpha;
+}
+
+ol ol ol ol ol ol {
+    list-style-type: lower-roman;
+    /* font-style: italic; */
+}
+
+ol ol ol ol ol ol ol {
+    list-style-type: decimal;
+    /* font-style: italic; */
+}
+
+/* li blockquote {
+    margin-left: -34px;
+    width: calc(100% + 44px);
+}
+
+li li blockquote {
+    margin-left: -59px;
+    width: calc(100% + 69px);
+}
+
+li li li blockquote {
+    margin-left: -84px;
+    width: calc(100% + 94px);
+}
+
+li li li li blockquote {
+    margin-left: -109px;
+    width: calc(100% + 119px);
+}
+
+li li li li li blockquote {
+    margin-left: -134px;
+    width: calc(100% + 144px);
+}
+
+li li li li li li blockquote {
+    margin-left: -159px;
+    width: calc(100% + 169px);
+}
+
+li li li li li li li blockquote {
+    margin-left: -184px;
+    width: calc(100% + 194px);
+} */
