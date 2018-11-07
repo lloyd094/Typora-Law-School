@@ -6,7 +6,7 @@ I created this as a reaction to how annoying Microsoft Word can be using outline
 
 The goal of this theme is to create really easy to read Outlines, and to help your sort out the differences of information through the use of Blockquotes, Tables, and more. 
 
-![](Outline Example.jpg)
+![](OutlineExample.jpg?raw=true)
 
 -----------
 
