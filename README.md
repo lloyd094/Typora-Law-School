@@ -10,13 +10,23 @@ The goal of this theme is to create really easy to read Outlines, and to help yo
 
 -----------
 
+### Changelog
+
+| Version          | Changes                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| **Release 1.0**  | *Initial Release*                                            |
+| **Release 1.0B** | +  Improved instructions<br />+  Created example sheet<br />+  Fixed a few bugs with formatting |
+| **Release 1.1**  | +  Added Task List formatting<br />+  Cleaned up a few things behind the scenes |
+
+-----
+
 ### To Install
 
 Installation is very easy - just make sure to select the theme from the `Themes` tab when you're done.
 
 1. First, make sure you download and extract the [latest release](https://github.com/lloyd094/Typora-Law-School/archive/v1.0B.zip).
-1. Open Typora and go to `File` > `Preference...` 
-1. Near the top of Preferences, there should be a button called `Open Theme Folder`.
+1. Open Typora and go to `File` > `Preferences...` 
+1. Under the `Appearance` tabs hould be a `Themes` section at the bottom with a button called `Open Theme Folder`.
 1. Copy both `law.css` and the `law` folder into the theme folder.
 1. Now you can select the theme "law" from the theme selection!
 
@@ -30,7 +40,7 @@ Lucky you! I made a decent little cheat sheet with outline examples, available b
 
 ### Questions
 
-Have any questions? Let me know! Submit a ticket, or if you want to improve anything, put in a pull request!
+Have any questions? Let me know! Submit a ticket, or if you want to improve anything, put in a pull request! If I don't get back to you, it's probably because I didn't see it. Feel free to email me at lloyd094@gmail.com as well!
 
 -------------
 
@@ -50,6 +60,12 @@ If you do want to throw anything my way, I won't stop you. But seriously, I'd ra
 
 -----
 
+### One Additional Note
+
+I would like to give a special thanks to everyone who has contacted me with ideas or suggestions on how to improve this theme, and an extra big thank you to those who have helped provide solutions on top of that. People like this are what makes the internet a really fun place.
+
+-----
+
 ### Yes, That's All!
 
 I hope that somehow, this helps at least one person out there other than myself. If it helps more, awesome. Best of luck to all your endeavors, and make sure to show those that matter in your life how much you love them.
@@ -57,3 +73,4 @@ I hope that somehow, this helps at least one person out there other than myself.
 
 
 --lloyd094
+

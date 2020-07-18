@@ -70,9 +70,9 @@ If it's not covered here, there are excellent resources available online. Howeve
 
 -----
 
-## Ordered Lists
+## Lists
 
-This theme is set up to create ordered lists in a standard outlining theme - just start off your list with the a number. *As a tip, if you want to go backwards, you can use either* `Enter x2` *or* `Shift + Tab`.
+- **Ordered Lists** theme is set up to create ordered lists in a standard outlining theme - just start off your list with the a number. *As a tip, if you want to go backwards, you can use either* `Enter x2` *or* `Shift + Tab`.
 
 ```md
 1. First Level
@@ -93,6 +93,18 @@ This theme is set up to create ordered lists in a standard outlining theme - jus
                1. Sixth Level
                   1. Seventh Level
                      1. *There is nothing planned past here, as you shouldn't need more than this.*
+
+
+
+- **Task Lists:** Thanks to the incredible help of [<u>*masonlr*</u>](https://github.com/masonlr), the theme now has the ability to display task lists correctly. The text of completed items will also turn a lighter shade so the incomplete list items stand out easier.
+
+```
+- [X] Completed List Item
+- [ ] Incomplete List Item
+```
+
+- [x] Completed List Item
+- [ ] Incomplete List Item
 
 --------------
 

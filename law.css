@@ -226,49 +226,13 @@ pre.md-meta-block {
     margin-bottom: 1em;
 }
 
-.task-list-item input:before {
-    content: '\221A';
-    display: inline-block;
-    width: 1.25rem;
-    height: 1.6rem;
-    vertical-align: middle;
-    text-align: center;
-    color: #bbb;
-    background-color: inherit;
+.md-task-list-item>input {
+    margin-left: -1.3em;
+    margin-top: 0.28em;
 }
 
-.task-list-item input:checked:before,
-.task-list-item input[checked]:before{
-    color: inherit;
-}
-
-.md-task-list-item > input {
-    top: auto;
-    margin-left: -1.1em;
-    font-size: 1.3em;
-    margin-top: 0px;
-    -webkit-appearance: none;
-}
-
-.md-task-list-item input:before {
-    content: '\2610';
-    display: inline-block;
-    width: 1.25rem;
-    height: 1.6rem;
-    vertical-align: middle;
-    text-align: center;
-    color: #bbb;
-    background-color: inherit;
-}
-
-.md-task-list-item input:checked:before,
-.md-task-list-item input[checked]:before{
-    color: inherit;
-    content: '\2611';
-}
-
-.task-list-item {
-    padding-left: 1.2em;
+.md-task-list-item.task-list-done > p {
+    color: #aaaaaa;
 }
 
 blockquote {
@@ -313,29 +277,20 @@ ol, ul {
     padding-left: 20px;
 }
 
-/* ol li {
-    font-weight: bold;
-} */
-
 ol ol li > * {
     font-weight: normal;
-    /* text-decoration: underline; */
 }
 
 ol ol ol li > * {
     font-weight: normal;
-    /* text-decoration: none !important;
-    display: inline-block; */
 }
 
 ol {
     list-style-type: decimal;
-    /* font-style: normal; */
 }
 
 ol ol {
     list-style-type: upper-alpha;
-    /* font-weight: normal; */
 }
 
 ol ol ol {
@@ -352,12 +307,10 @@ ol ol ol ol ol {
 
 ol ol ol ol ol ol {
     list-style-type: lower-roman;
-    /* font-style: italic; */
 }
 
 ol ol ol ol ol ol ol {
     list-style-type: decimal;
-    /* font-style: italic; */
 }
 
 /* li blockquote {
